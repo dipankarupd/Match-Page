@@ -12,6 +12,7 @@ class AddToMatch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     final ParticipantController controller = Get.find();
 
     return Column(
@@ -25,8 +26,12 @@ class AddToMatch extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              PersonFrame(
-                dp: user.dp,
+              // PersonFrame(
+              //   dp: user.dp,
+              // ),
+              const IndividualFrame(width: 60, height: 64, imageUrl: ''),
+              const SizedBox(
+                width: 10,
               ),
               Expanded(
                 child: Row(

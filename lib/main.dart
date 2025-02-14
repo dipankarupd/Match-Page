@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Jost',
             ),
       ),
-      home: PlayerMatchPage(),
+      home: MatchPage(),
     );
   }
 }
