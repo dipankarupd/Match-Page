@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:match/match_page.dart';
 import 'package:match/participant_controller.dart';
+import 'package:match/player_match_page.dart';
 
 void main() {
 // Initialize GetX Controller globally
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Jost',
             ),
       ),
-      home: const MatchPage(),
+      home: PlayerMatchPage(),
     );
   }
 }

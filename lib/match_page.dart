@@ -93,13 +93,13 @@ class _MatchPageState extends State<MatchPage>
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
+                          SizedBox(
                             // color: Colors.amber,
                             width: MediaQuery.of(context).size.width * 0.8,
                             child: Center(
                               child: Obx(() {
                                 return Padding(
-                                  padding: EdgeInsets.only(top: 6),
+                                  padding: const EdgeInsets.only(top: 6),
                                   child: ListView.builder(
                                     scrollDirection: Axis
                                         .horizontal, // Make the list scroll horizontally
@@ -178,7 +178,7 @@ class _MatchPageState extends State<MatchPage>
                       top: 2,
                     ),
               decoration: BoxDecoration(
-                color: Color(0xffC80D31),
+                color: const Color(0xffC80D31),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(
