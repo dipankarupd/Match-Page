@@ -254,9 +254,9 @@ class CustomPainter extends BoxPainter {
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
     final double width = configuration.size!.width + 15;
 
-    final double shiftLeft = -10; // Move indicator 10 pixels to the left
+    const double shiftLeft = -10; // Move indicator 10 pixels to the left
 
-    final double height = 4; // Reduced height for a sleek look
+    const double height = 4; // Reduced height for a sleek look
 
     final Paint paint = Paint()
       ..shader = LinearGradient(

@@ -12,7 +12,7 @@ class AddToMatch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
+    //final screenWidth = MediaQuery.of(context).size.width;
     final ParticipantController controller = Get.find();
 
     return Column(
@@ -61,7 +61,6 @@ class AddToMatch extends StatelessWidget {
                                   key: ValueKey('remove_${user.userId}'),
                                   onPress: () {
                                     controller.removeParticipant(user);
-                                    print('Pressed remove button');
                                   },
                                 )
                               : ChangingButtons(
@@ -71,7 +70,6 @@ class AddToMatch extends StatelessWidget {
                                   key: ValueKey('add_${user.userId}'),
                                   onPress: () {
                                     controller.addParticipant(user);
-                                    print('Added to temp: ${user.name}');
                                   },
                                 ),
                         );
@@ -110,8 +108,6 @@ class ChangingButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
     return ElevatedButton(
       onPressed: onPress,
       style: ElevatedButton.styleFrom(
@@ -164,7 +160,7 @@ class PersonFrame extends StatelessWidget {
   Widget build(BuildContext context) {
     print(dp);
     final screenWidth = MediaQuery.of(context).size.width;
-    final screenheight = MediaQuery.of(context).size.height;
+    // final screenheight = MediaQuery.of(context).size.height;
     return SizedBox(
         width: screenWidth * 0.17,
         height: screenWidth * 0.17,
